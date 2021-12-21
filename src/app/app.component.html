@@ -1,11 +1,11 @@
 <h1>Posts</h1>
 <div class="posts-container">
-    <div class="post" *ngFor="let post of posts" (click)="loadPostComments(post.id)">
+    <div id="karma_test-posts" class="post" *ngFor="let post of posts" (click)="loadPostComments(post.id)">
         {{ post.title }}
     </div>
 </div>
 
-<div *ngIf="postComments.length > 0">
+<div id="karma_test-comments" *ngIf="postComments.length > 0">
     <h1>Comments</h1>
     <div class="posts-container">
         <div class="post" *ngFor="let comment of postComments">

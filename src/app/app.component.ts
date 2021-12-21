@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.returnPostsList();    
+    this.returnPostsList();
   }
 
   loadPostComments(postId: number) {
